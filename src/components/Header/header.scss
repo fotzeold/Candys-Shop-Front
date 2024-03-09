@@ -1,0 +1,43 @@
+header{
+	background: rgba(64, 21, 21, 0.05);
+	position: relative;
+	z-index: 2;
+
+	.header__burger, .header__nav-contacts{
+		display: none;
+	}
+
+	.row{
+		justify-content: space-between;
+		gap: 40px;
+	}
+
+	a{
+		cursor: pointer;
+		font-size: 20px;
+	}
+
+	.header__basket{
+		position: relative;
+		background: url("../../assets/logo/bag.svg") 0 0/cover no-repeat;
+		display: block;
+		width: 38px;
+		height: 38px;
+	}
+
+	.header__basket figure{
+		position: absolute;
+		bottom: -10px;
+		right: -5px;
+		line-height: 18px;
+		font-size: 18px;
+		color: white;
+		padding: 3px 6px;
+		border-radius: 8px;
+		background: linear-gradient(30deg, rgba(118,65,65,1) 0%, rgba(110,81,60,1) 57%, rgb(92, 44, 44) 80%);;
+	}
+
+	nav p{
+		display: none;
+	}
+}
