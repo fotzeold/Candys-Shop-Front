@@ -1,11 +1,16 @@
 import "./app.scss";
 import Header from "../Header/Header";
+import Hero from "../Hero/Hero";
+import Advertising from "../Advertising/Advertising";
 
 const App = () => {
 	return (
 		<>
 			<Header />
-			<h1>Hello world</h1>
+			<main>
+				<Hero />
+				<Advertising />
+			</main>
 		</>
 	)
 }
