@@ -1,0 +1,24 @@
+.product-card{
+	max-width: 280px;
+	padding: 13px;
+	border: 1px solid #331717;
+	border-radius: 10px;
+	h3{
+		font-size: 20px;
+		margin: 10px 0;
+	}
+	img{
+		object-fit: cover;
+		width: 100%;
+	}
+	.product-card__descr{
+		margin: 10px 0;
+	}
+	.product-card__price{
+		font-size: 24px;
+		font-weight: 700;
+	}
+	.product-card__buy{
+		margin-top: 15px;
+	}
+}

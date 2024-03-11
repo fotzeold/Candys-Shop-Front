@@ -28,6 +28,15 @@
 			display: none;
 		}
 	}
+	.advertising{
+		.row{
+			justify-content: center;
+			gap: 30px;
+		}
+		h2{
+			text-align: center;
+		}
+	}
 }
 
 @media all and (max-width: 768px) {

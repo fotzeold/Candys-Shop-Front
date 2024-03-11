@@ -1,0 +1,17 @@
+.advertising{
+	.row{
+		justify-content: space-between;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+	h2{
+		margin-bottom: 40px;
+		font-size: 28px;
+	}
+	a{
+		text-align: center;
+		color: black;
+		display: block;
+		margin-top: 30px;
+	}
+}
