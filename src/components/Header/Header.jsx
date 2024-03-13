@@ -1,6 +1,7 @@
 import "./header.scss";
-import { logo, phoneCallMenu, facebookMenu, viberMenu } from "../../services/images";
+import { logo } from "../../services/images";
 import { useState } from "react";
+import Contacts from "../Contacts/Contacts";
 
 const Header = () => {
 	const [activeMenu, setActiveMenu] = useState(false)
@@ -29,12 +30,7 @@ const Header = () => {
 								<li><a>Солодощі</a></li>
 							</ul>
 							<div className="header__nav-contacts">
-								<ul>
-									<li><a href=""><img src={viberMenu} alt="" /> <span>Viber</span> </a></li>
-									<li><a href=""><img src={facebookMenu} alt="" /><span>Facebook</span> </a></li>
-									<li><a href=""><img src={phoneCallMenu} alt="" /><span>0983488818</span> </a></li>
-									<li><a href=""><img src={phoneCallMenu} alt="" /><span>0934638024</span> </a></li>
-								</ul>
+								<Contacts param={"menu"} />
 							</div>
 						</nav>
 						<a className="header__basket"><figure>2</figure></a>

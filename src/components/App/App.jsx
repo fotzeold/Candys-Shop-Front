@@ -2,6 +2,7 @@ import "./app.scss";
 import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 import Advertising from "../Advertising/Advertising";
+import Footer from "../Footer/Footer";
 
 import { getProducts } from "../../services/service.js";
 import { useState, useEffect } from "react";
@@ -22,6 +23,7 @@ const App = () => {
 				<Hero />
 				<Advertising products={products} />
 			</main>
+			<Footer />
 		</>
 	)
 }
