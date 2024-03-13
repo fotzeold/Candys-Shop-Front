@@ -28,7 +28,7 @@
 			display: none;
 		}
 	}
-	.advertising{
+	.advertising, .products{
 		.row{
 			justify-content: center;
 			gap: 30px;
@@ -94,11 +94,11 @@
 			display: block;
 		}
 	
-		nav a{
+		nav .link{
 			display: block;
 		}
 		
-		.header__nav-page a{
+		.header__nav-page .link{
 			border: 1px solid #331717;
 			border-radius: 15px;
 			width: 100%;
