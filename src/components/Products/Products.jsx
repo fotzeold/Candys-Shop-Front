@@ -1,7 +1,21 @@
 import "./products.scss";
 import ProductCard from "../ProductCard/ProductCard"
 
-const Products = ({ products }) => {
+import { getProducts } from "../../services/service";
+import { useEffect, useState } from "react";
+
+const Products = () => {
+	const [products, setProducts] = useState()
+
+	useEffect(() => {
+		getProducts()
+			.then((data) => {
+				if (data && data[0].name) {
+					setProducts(data)
+				}
+			})
+			.catch(error => console.log(error))
+	}, [products])
 
 	return (
 		<section className="products">
